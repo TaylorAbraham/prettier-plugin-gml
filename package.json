@@ -1,0 +1,22 @@
+{
+  "name": "prettier-plugin-gml",
+  "version": "0.1.0",
+  "description": "Adds GML language support to Prettier",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TaylorAbraham/prettier-plugin-gml.git"
+  },
+  "keywords": [
+    "prettier",
+    "prettier-plugin",
+    "gml",
+    "game-maker"
+  ],
+  "author": "Taylor Abraham",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/TaylorAbraham/prettier-plugin-gml/issues"
+  },
+  "homepage": "https://github.com/TaylorAbraham/prettier-plugin-gml#readme"
+}
