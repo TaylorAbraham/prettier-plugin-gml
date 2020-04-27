@@ -8,3 +8,10 @@
 
 # Prettier Plugin GML
 A Prettier plugin supporting Game Maker Language for Game Maker Studio 2
+
+# Installation
+```
+npm install -g prettier prettier-plugin-gml
+```
+
+Also Install the VS Code Prettier plugin for automatic formatting in VS Code!
