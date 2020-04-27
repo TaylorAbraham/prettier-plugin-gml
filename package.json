@@ -2,7 +2,7 @@
   "name": "prettier-plugin-gml",
   "version": "0.1.0",
   "description": "Adds GML language support to Prettier",
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TaylorAbraham/prettier-plugin-gml.git"
