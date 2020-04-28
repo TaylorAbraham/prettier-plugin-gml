@@ -5,6 +5,17 @@
   height="210"
   src="https://cdn.iconscout.com/icon/free/png-512/game-maker-2-569485.png">&nbsp;&nbsp;
 </p>
+<p align="center">
+  <a href="https://github.com/TaylorAbraham/prettier-plugin-gml/blob/master/LICENSE">
+    <img alt="AGPL 3.0" src="https://img.shields.io/github/license/taylorabraham/prettier-plugin-gml">
+  </a>
+  <a href="https://www.npmjs.com/package/prettier-plugin-gml">
+    <img alt="Version on NPM" src="https://img.shields.io/npm/v/prettier-plugin-gml">
+  </a>
+  <a href="https://github.com/TaylorAbraham/prettier-plugin-gml/issues">
+    <img alt="Github Issues" src="https://img.shields.io/github/issues/taylorabraham/prettier-plugin-gml">
+  </a>
+</p>
 
 # Prettier Plugin GML
 A Prettier plugin supporting Game Maker Language for Game Maker Studio 2
