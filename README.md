@@ -31,7 +31,7 @@
 - [Troubleshooting](#troubleshooting)
 
 # Overview
-This plugin enhances Prettier, a tool for automatically formatting your code in an opinionated way. This adds Game Maker Language (.gml file) support in the context of Game Maker Studio 2.
+This plugin enhances [Prettier](https://prettier.io/), a tool for automatically formatting your code in an opinionated way. This adds Game Maker Language (.gml file) support in the context of Game Maker Studio 2.
 
 ## Example
 
