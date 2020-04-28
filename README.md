@@ -17,6 +17,7 @@
   </a>
 </p>
 
+# Prettier GML Plugin
 - [Overview](#overview)
   * [Example](#example)
 - [Installation](#installation)
