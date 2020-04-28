@@ -15,6 +15,9 @@
   <a href="https://github.com/TaylorAbraham/prettier-plugin-gml/issues">
     <img alt="Github Issues" src="https://img.shields.io/github/issues/taylorabraham/prettier-plugin-gml">
   </a>
+  <a href="https://www.npmjs.com/package/prettier-plugin-gml">
+    <img alt="Downloads" src="https://img.shields.io/npm/dt/prettier-plugin-gml">
+  </a>
 </p>
 
 # Prettier GML Plugin
