@@ -21,24 +21,28 @@
 </p>
 
 # Prettier GML Plugin
+
 - [Overview](#overview)
-  * [Example](#example)
+  - [Example](#example)
 - [Installation](#installation)
-  * [Prerequisites](#prerequisites)
-  * [Global Install](#global-install)
-  * [Local Install](#local-install)
+  - [Prerequisites](#prerequisites)
+  - [Global Install](#global-install)
+  - [Local Install](#local-install)
 - [Usage](#usage)
-  * [⚠️IMPORTANT NOTICE⚠️](#important-notice)
-  * [VS Code](#vs-code)
-  * [Command Line](#command-line)
+  - [⚠️IMPORTANT NOTICE⚠️](#important-notice)
+  - [VS Code](#vs-code)
+  - [Command Line](#command-line)
 - [Troubleshooting](#troubleshooting)
+- [Development](#development)
 
 # Overview
+
 This plugin enhances [Prettier](https://prettier.io/), a tool for automatically formatting your code in an opinionated way. This adds Game Maker Language (.gml file) support in the context of Game Maker Studio 2.
 
 ## Example
 
 ### Before
+
 ```
 var enemy = argument0; var damage = argument1
 
@@ -51,6 +55,7 @@ with(enemy)
 ```
 
 ### After
+
 ```
 var enemy = argument0;
 var damage = argument1;
@@ -66,12 +71,15 @@ with (enemy) {
 Beautiful! 🌼
 
 # Installation
+
 Install the prequisites, then follow either the global or local install below.
 
 ## Prerequisites
+
 Node and npm must be installed. They can be installed together from here: https://nodejs.org/
 
 You can then verify that Node and npm have been installed correctly by entering the following commands into any terminal such as Powershell:
+
 ```
 node -v
 npm -v
@@ -80,29 +88,38 @@ npm -v
 If you see a version number for each of them, success! Otherwise, try uninstalling your current version of Node and reinstall it.
 
 ## Global Install
+
 This will install Prettier and the Prettier GML plugin globally on your machine, meaning it can be used for all of your projects.
+
 ```
 npm install -g --save-exact prettier prettier-plugin-gml
 ```
 
 ## Local Install
+
 This will install Prettier and the Prettier GML plugin ONLY for a single Game Maker project. Open up a terminal in the directory of your Game Maker project and run the following commands:
+
 ```
 npm init
 npm install --save-dev --save-exact prettier prettier-plugin-gml
 ```
 
 # Usage
+
 ## ⚠️IMPORTANT NOTICE⚠️
+
 This extension is still experimental, please be sure to commit your code into version control or have a backup before using this! There may be uncaught bugs that have the potential to delete code. If using VS Code, this is fixable with an "undo" command after saving.
 
 ## VS Code
+
 Prettier integrates directly into VS Code! Once you have done the above setup, just install the "Prettier" and "GML Support" VS Code extensions. You may need to enable "editor.formatOnSave" in your VS Code preferences, and now when you save a GML file it should automatically format itself!
 
 **WARNING**: If you followed the global install, this will cause Prettier to start formatting all files you open with VS Code that are supported with Prettier (such as HTML, JS, and CSS files).
 
 ## Command Line
-To use without VS Code, simply follow the installation above and open up a terminal in the directory of your Game Maker project. Then just run 
+
+To use without VS Code, simply follow the installation above and open up a terminal in the directory of your Game Maker project. Then just run
+
 ```
 prettier --write .
 ```
@@ -110,6 +127,22 @@ prettier --write .
 For more advanced configurations, the Prettier docs have fantastic explanations of the command line options: https://prettier.io/docs/en/cli.html
 
 # Troubleshooting
-* One of the most common fixes may be to simply reinstall Node and npm from https://nodejs.org/
-* If your Node and/or npm versions are very old (<12 or <6.14 respectively), uninstall and reinstall them with more up to date versions
-* If you cannot find an answer to your issue after carefully reading through the installation and usage instructions, file an issue [right here!](https://github.com/TaylorAbraham/prettier-plugin-gml/issues)
+
+- One of the most common fixes may be to simply reinstall Node and npm from https://nodejs.org/
+- If your Node and/or npm versions are very old (<12 or <6.14 respectively), uninstall and reinstall them with more up to date versions
+- If you cannot find an answer to your issue after carefully reading through the installation and usage instructions, file an issue [right here!](https://github.com/TaylorAbraham/prettier-plugin-gml/issues)
+
+# Development
+
+Create a new folder and add a sample GML file to it. Inside that folder, git clone this repository. Then run
+
+```
+npm init
+npm install --save-dev prettier
+```
+
+Once changes are made, the plugin can be tested with:
+
+```
+npx prettier --plugin .\prettier-plugin-gml\ .\TEST.gml
+```
